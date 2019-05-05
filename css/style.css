@@ -1,0 +1,84 @@
+html, body, #app{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.header{
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/header2.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	font-family: impact;
+}
+
+.main-view{
+	width: 70%;
+	margin: auto;
+}
+
+.header h1{
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding-top: 10em;
+	font-size: 40px;
+	margin-block-start: 0;
+    margin-block-end: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.about{
+	width: 100%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.flex{
+	display: flex;
+	justify-content: space-around;
+}
+.square-width{
+	width: 100%;
+}
+.square-box{
+
+}
+.square{
+	position: relative;
+	height: 400px;
+	width: 28%;
+	/*background-color: red;*/
+	-webkit-box-shadow: 57px -45px 19px 7px rgba(0,0,0,0.29);
+	-moz-box-shadow: 57px -45px 19px 7px rgba(0,0,0,0.29);
+	box-shadow: 57px -45px 19px 7px rgba(0,0,0,0.29);
+	transform:skew(178deg,178deg);
+	float: left;
+	transition: all 1s ease 0s;
+}
+
+#first-square{
+	background-image: linear-gradient(#b6edce, #42f4f4); ;
+	top: 400px;
+	z-index: -1;
+}
+
+#second-square{
+	background-image: linear-gradient(#c237c6, #9343cc);
+	top: 200px;
+	z-index: 1;
+	
+}
+#third-square{
+	background-image: linear-gradient(#e6ed1c, #efb113);
+	z-index: 2;
+	
+}
+
+.join{
+	/*margin-top: 20%;*/
+	width: 100%;
+	height: 100%;
+}

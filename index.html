@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="app"> 
+		<section class="header">
+			<div class="main-view">
+				<h1>„Patrz oczyma, fotografuj sercem.”</h1>
+			</div>
+		</section>
+		<section class="about" id="about">
+			
+			<div class="main-view flex square-box" key="342">
+				
+				<div class="square" id="first-square" :style="{left: leftSquare.left + '%', top: leftSquare.top + 'px'}"  key="1"></div>
+				<div class="square" id="second-square" key="2"></div>
+				<div class="square" id="third-square" :style="{left: rightSquare.left + '%', top: rightSquare.top + 'px'}" key="3"></div>
+			</div>
+			
+		</section>
+		<section class="join" id="join">
+			
+		</section>
+	</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
