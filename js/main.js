@@ -3,7 +3,7 @@ new Vue({
 	data: {
 		leftSquare:{
 			left: 0,
-			top: 400
+			top: 100
 		},
 		rightSquare:{
 			left: 0,
@@ -50,15 +50,15 @@ new Vue({
 			// }
 			if(this.offsetTop  > this.aboutOffset - 300){
 				this.leftSquare.left = 7;
-				this.leftSquare.top =  300;
+				this.leftSquare.top =  75;
 
 				this.rightSquare.left =  -7;
-				this.rightSquare.top = 100;
+				this.rightSquare.top = 25;
 			}
 
 			if(this.offsetTop  > this.joinOffset - 300 || this.offsetTop  < this.aboutOffset ){
 				this.leftSquare.left = 0;
-				this.leftSquare.top =  400;
+				this.leftSquare.top =  100;
 
 				this.rightSquare.left =  0;
 				this.rightSquare.top = 0;
