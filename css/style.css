@@ -18,184 +18,691 @@ html, body, #app{
 	width: 70%;
 	margin: auto;
 }
+.flex{
+	display: flex;
+}
+.full-height{
+	height: 100%;
+}
 
 .header h1{
 	width: 100%;
 	text-align: center;
 	color: white;
-	padding-top: 10em;
-	font-size: 2vw;
+	padding-top: 5em;
+	font-size: 3vw;
 	margin-block-start: 0;
-    margin-block-end: 0;
+	margin-block-end: 0;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.header h2{
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 1.1vw;
+	margin-block-start: 0.2em;
+	margin-block-end: 0.2em;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .about{
 	width: 100%;
+	height: 65%;
+}
+.about-div{
+	width: 50%;
 	height: 100%;
-	background-image: url('../img/about.jpg');
-	background-attachment: fixed;
-	padding-top: 3%;
-	margin-bottom: 3%;
-}
 
-.flex{
-	display: flex;
-	justify-content: space-around;
 }
-.square-width{
+.about-div img{
 	width: 100%;
-}
-.square-box{
-	padding-top: 7%;
 	height: 100%;
 }
-.square{
-	position: relative;
-	height: 35%;
-	width: 28%;
-	/*background-color: red;*/
-	-webkit-box-shadow: 57px -45px 19px 7px rgba(0,0,0,0.29);
-	-moz-box-shadow: 57px -45px 19px 7px rgba(0,0,0,0.29);
-	box-shadow: 57px -45px 19px 7px rgba(0,0,0,0.29);
-	transform:skew(178deg,178deg);
-	transition: all 1s ease 0s;
+
+.about-description{
+	height: 100%;
+	width: 40%;
+	padding: 2% 0 0 5%;
+	text-align: justify;
+}
+.about-description h1{
+	margin-block-start: 0.43em;
+	font-family: "EB Garamond";
+	font-size: 2.2vw;
+}
+.about-description p{
+	font-family: "Raleway";
+	font-size: 0.7vw;
+}
+#wspolpraca{
+	padding-top: 8%;
+	font-size: 0.8vw;
+	transition: color 0.5s ease;
+}
+#wspolpraca:hover{
+	color: grey;
+	cursor: pointer;
+}
+.line{
+	border-top: 2px solid black;
+	width: 30%;
+	padding-bottom: 7%;
 }
 
-#first-square{
-	background-image: linear-gradient(#b6edce, #42f4f4); ;
-	top: 100px;
-	z-index: 1;
+/*sekcja portfolio*/
+
+.portfolio{
+	width: 100%;
+	height: 1300px;
+}
+.gallery{
+	width: 100%;
+	height: 100%;
+	/*display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;*/
 }
 
-#second-square{
-	background-image: linear-gradient(#c237c6, #9343cc);
-	top: 50px;
-	z-index: 2;
-	
+.first-column{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-wrap: wrap;
 }
-#third-square{
-	background-image: linear-gradient(#e6ed1c, #efb113);
-	z-index: 3;
-	
+.second-column{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-/*.menu {
-	width: 90%;
-	height: 90%;
-	outline: 2px white solid;
-	position: fixed;
-	z-index: 5;
-	left: 5%;
-	top: 5%;
-}*/
-
-/*fixed menu */
-.menu{
-	width: 90%;
-	height: 90%;
+#first-subcolumn{
+	height: 100%;
+	max-width: 35%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	/*border: 2px solid white;*/
-	position: fixed;
-	top: 5%;
-	left: 5%;
+	flex-wrap: wrap;
 }
-.top, .bot{
+#second-subcolumn{
 	height: 100%;
-	width: 100%;
+	max-width: 30%;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
-.bot{
-	/*padding-top: 10%;*/
-}
-.top-left{
-	width: 45%;
+#third-subcolumn{
 	height: 100%;
-	border-left: 2px solid white;
-	border-top: 2px solid white;
+	max-width: 35%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#fourth-subcolumn{
+	height: 100%;
+	max-width: 20%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#fifth-subcolumn{
+	height: 100%;
+	max-width: 30%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#sixth-subcolumn{
+	height: 100%;
+	max-width: 50%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+.one-third-height{
+	height: 30%;
+}
+.two-third-height{
+	height: 70%;
+}
+.row-img{
+	width: 50%;
+	height: 100%;
+}
+.full-img{
+	width: 100%;
+	height: 100%;
+}
+.col-img{
+	width: 100%;
+	height: 50%;
+}
+.portfolio img{
+	width: 100%;
+	height: 100%;
+	
+}
+.overflow-h{
+	overflow: hidden;
 }
 
-.top-right{
-	width: 45%;
-	height: 100%;
-	border-right: 2px solid white;
-	border-top: 2px solid white;
+.portfolio img:hover{
+	opacity: 0.4;
+	transition: all 0.3s ease-in;
+	cursor: pointer;
+	width: 105%;
+	height: 105%;
+	
 }
 
-.bot-left{
-	width: 45%;
+
+/*sekcja po galerii*/
+
+.quotation{
+	width: 100%;
 	height: 100%;
-	border-left: 2px solid white;
-	border-bottom: 2px solid white;
+	background-image: url(../img/about.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+
+
 }
 
-.bot-right{
-	width: 45%;
-	height: 100%;
-	border-right: 2px solid white;
-	border-bottom: 2px solid white;
-}
-.nav-text{
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.quotation h1{
+	font-family: "EB Garamond";
+	font-size: 3vw;
+	width: 60%;
 	color: white;
-	font-size: 2vw;
-	font-family: impact;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;	
+	margin: 0;
 }
-.nav-top{
+
+.relative{
 	position: relative;
-	width: 10%;
-	/*left: 45%;*/
-	text-align: center;
-	top: -6.5%;
-}
-.nav-bot{
-	position: relative;
-	width: 10%;
-	/*left: 45%;*/
-	text-align: center;
-	top: 92.5%;
+	left: 5%;
+	top: 60%;
 }
 
-.edge-navs {
-	display: flex;
-	justify-content: space-between;
-	padding: 3% 0;
 
-}
+/*sekcja kontakt*/
 
-.nav-left{
-	position: relative;
-	left: -1.2%;
-	text-align: center;
-	writing-mode: vertical-rl;
-}
 
-.nav-right{
-	position: relative;
-	right: -1.2%;
-	text-align: center;
-	writing-mode: vertical-rl;
-}
-/*#about-nav{
-
-	width: 10%;
-	margin: auto;
-	margin-top: -12px;
-	top: 5%;
-	left: 45%;
-	background: black none repeat scroll 0 0;
-	z-index: 8;
-	text-align: center;
-
-}*/
-
-.join{
-	/*margin-top: 20%;*/
+.contact{
 	width: 100%;
 	height: 100%;
 }
 
+.contact-body{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.contact-img{
+	width: 50%;
+	height: 100%;
+}
+
+.contact-img img{
+	height: 100%;
+	width: 100%;
+}
+
+.contact-form{
+	width: 50%;
+	height: 100%;
+	font-family: "EB Garamond";
+
+}
+
+.contact-form-header{
+	width: 60%;
+	float: right;
+	display: flex;
+	flex-direction: column;
+}
+.contact-form-header h1{
+	font-size: 2.5vw;
+}
+
+.contact-form-header p{
+	color: grey;
+	font-size: 1.1vw;
+	margin-block-start: 0.2em;
+	margin-block-end: 0.2em;
+}
+
+.contact-form-header .line{
+	width: 10%;
+}
+
+.form{
+	/*padding-top: 10%;*/
+	float: right;
+	width: 60%;
+}
+.form, .contact-form-header{
+	height: 50%;
+}
+.form form{
+	width: 90%;
+}
+
+.form input{
+	margin-top: 6px;
+	height: 18px;
+	width: 100%;
+}
+.form textarea{
+	margin-top: 6px;
+	width: 100%;
+	resize: none;
+}
+.form-button{
+	width: 100%;
+
+}
+
+.form button{
+	margin-top: 6px;
+	width: 30%;
+	height: 2.2em;
+	background-color: #43444f;
+	color: white;
+	border: none;
+	float: right;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+.form button:hover{
+	background-color: #a4a5ad;
+	color: black;
+}
+/*footer*/
+
+.footer{
+	width: 100%;
+	height: 55px;
+	background-color: #43444f;
+	font-family: "EB Garamond";
+	font-size: 1.2vw;
+	line-height: 55px;
+	color: white;
+
+}
+
+.footer a{
+	padding-left: 16%;
+}
+
+.footer a:visited{
+	color: white;
+}
+.footer a:active{
+	color: white;
+}
+
+/*nav menu*/
+.nav{
+	width: 100%;
+	height: 80px;
+	/*line-height: 80px;*/
+	font-family: "EB Garamond";
+	font-size: 1.2vw;
+	background-color: white;
+	color: black;
+	transition: all 0.5s ease;
+	
+
+}
+.fixed{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 5;
+
+}
+.nav-menu{
+	width: 30%;
+	height: 100%;
+	margin: auto;
+	text-decoration: none;
+	display: flex;
+	justify-content: space-around;
+
+}
+
+
+.nav-menu a{
+	width: 20%;
+	line-height: 85px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.6s ease;
+}
+
+.nav-menu a:visited{
+	color: black;
+}
+
+.nav-menu a:hover{
+	background-color: black;
+	color: white;
+}
+
+
+/*media*/
+
+@media screen and (max-width: 600px) {
+	.header{
+		height: 30%;
+	}
+
+	/*about*/
+	.about-mobile{
+		display: flex;
+		flex-direction: column;
+	}
+	.about-div{
+		width: 100%;
+		height: 50%;
+	}
+	.about-description{
+		height: 50%;
+		width: 30%;
+
+		margin: auto;
+		padding: 12% 0 0 5%;
+		text-align: justify;
+	}
+	.about-description h1{
+		font-size: 2.6vw;
+	}
+	.about-description p{
+		font-size: 1vw;
+	}
+
+	/*gallery*/
+
+	.portfolio{
+		height: auto;
+	}
+	.first-column{
+		width: 100%;
+		height: 50%;
+		display: block;
+	
+	}
+	.second-column{
+		width: 100%;
+		height: 50%;
+		display: block;
+	}
+
+	#first-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+	
+	}
+	#second-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+	
+	}
+	#third-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+	
+	}
+
+	#fourth-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+	
+	}
+	#fifth-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+	
+	}
+	#sixth-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+
+	}
+	.mobile-flex{
+		flex-direction: column;
+	}
+	.mobile-flex div{
+		width: 100%;
+	}
+
+	/*sekcja z cytatem*/
+	.quotation{
+		height: 50%;
+	}
+
+	/*contact*/
+	.contact{
+		height: 150%;
+	}
+	.contact-body{
+		width: 100%;
+		height: 50%;
+		display: block;
+	}
+	.contact-img{
+		width: 100%;
+	}
+
+	.contact-form{
+		width: 100%;
+		height: 100%;
+		font-family: "EB Garamond";
+
+	}
+
+	.contact-form-header{
+		width: 60%;
+		height: 30%;
+		text-align: center;
+		float: none;
+		display: block;
+		margin: auto;
+	}
+
+	.contact-form-header .line{
+		margin: auto;
+	}
+
+	.contact-form-header h1{
+		font-size: 2.7vw;
+	}
+	.contact-form-header p {
+		font-size: 1.4vw;
+	}
+
+	.form{
+	/*padding-top: 10%;*/
+		float: none;
+		width: 60%;
+		margin: auto;
+	}
+	.form form{
+		width: 100%;
+	}
+
+	.form input{
+		margin-top: 6px;
+		height: 18px;
+		width: 100%;
+	}
+	.form textarea{
+		margin-top: 6px;
+		width: 100%;
+		resize: none;
+	}
+	.form-button{
+		width: 60%;
+		margin: auto;
+	}
+
+	.form button{
+		margin-top: 6px;
+		width: 110%;
+		margin: auto;
+		margin-top: 15%;
+		height: 2.2em;
+		background-color: #43444f;
+		color: white;
+		border: none;
+		float: none;
+		cursor: pointer;
+		transition: all 0.5s ease;
+	}
+	.form button:hover{
+		background-color: #a4a5ad;
+		color: black;
+	}
+
+	/*footer*/
+	.footer{
+		height: 45px;
+		line-height: 45px;
+		font-size: 3vw;
+	}
+	.footer a{
+		padding-left: 10%;
+	}
+
+	.footer a:visited{
+		color: white;
+	}
+	.footer a:active{
+		color: white;
+	}
+
+	.nav{
+		width: 100%;
+		height: 30px;
+		/*line-height: 80px;*/
+		font-family: "EB Garamond";
+		font-size: 1.8vw;
+		background-color: white;
+		color: black;
+		transition: all 0.5s ease;
+		
+
+	}
+	.nav-menu{
+		width: 30%;
+		height: 100%;
+		margin: auto;
+		text-decoration: none;
+		display: flex;
+		justify-content: space-around;
+
+	}
+
+
+	.nav-menu a{
+		width: 20%;
+		line-height: 30px;
+		text-align: center;
+		text-decoration: none;
+		transition: all 0.6s ease;
+	}
+
+	.nav-menu a:visited{
+		color: black;
+	}
+
+	.nav-menu a:hover{
+		background-color: black;
+		color: white;
+	}
+}
+
+@media screen and (max-width: 900px)  {
+	.about{
+		height: 100%;
+	}
+	
+	.contact{
+		height: 185%;
+	}
+
+	.footer{
+		font-size: 2vw;
+	}
+
+	.portfolio{
+		height: auto;
+	}
+	.first-column{
+		width: 100%;
+		height: 50%;
+		display: block;
+	
+	}
+	.second-column{
+		width: 100%;
+		height: 50%;
+		display: block;
+	}
+
+	#first-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+	
+	}
+	#second-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+	
+	}
+	#third-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+	
+	}
+
+	#fourth-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+	
+	}
+	#fifth-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+	
+	}
+	#sixth-subcolumn{
+		height: 50%;
+		max-width: 100%;
+		display: block;
+
+	}
+	.mobile-flex{
+		flex-direction: column;
+	}
+	.mobile-flex div{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px){
+	.quotation{
+		height: 150%;
+	}
+}
