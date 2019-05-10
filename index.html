@@ -11,7 +11,17 @@
 </head>
 <body>
 	<div id="app"> 
+		<div class="modal" v-if="modalView == true">
 
+			<div class="modal-body">
+				<i class="fas fa-times" id="xmark" @click="closeModal"></i>
+				<i class="fas fa-arrow-circle-left" id="arrow-left" @click="previousImage"></i>
+				<transition name='fade'>	
+					<img :src="activeImage" :key="activeId" >
+				</transition>
+				<i class="fas fa-arrow-circle-right" id="arrow-right" @click="nextImage"></i>
+			</div>
+		</div>
 		<section class="nav" id="nav" :class="{fixed: offsetTop>200}">
 			<div class="main-view nav-menu">
 				<a href="#header" v-smooth-scroll="{ duration: 1000, offset: 0 , container: '' }">Home</a>
@@ -62,37 +72,37 @@
 				<div class="first-column">
 					<div id="first-subcolumn">
 						<div class="flex one-third-height mobile-flex">
-							<div id="0" class="row-img overflow-h"><img src="img/images/0.jpg"></div>
-							<div id="1" class="row-img overflow-h"><img src="img/images/1.jpg"></div>
+							<div id="0" class="row-img overflow-h" @click="setModalView($event)"><img src="img/images/0.jpg"></div>
+							<div id="1" class="row-img overflow-h" @click="setModalView($event)"><img src="img/images/1.jpg"></div>
 						</div>
-						<div class="two-third-height overflow-h" id="2">
+						<div class="two-third-height overflow-h" id="2" @click="setModalView($event)">
 							<img src="img/images/2.jpg">
 						</div>
 					</div>
 					<div id="second-subcolumn">
-						<div id="3" class="col-img overflow-h"><img src="img/images/3.jpg"></div>
-						<div id="4" class="col-img overflow-h"><img src="img/images/4.jpg"></div>
+						<div id="3" class="col-img overflow-h" @click="setModalView($event)"><img src="img/images/3.jpg"></div>
+						<div id="4" class="col-img overflow-h" @click="setModalView($event)"><img src="img/images/4.jpg"></div>
 					</div>
 					<div id="third-subcolumn">
-						<div class="two-third-height overflow-h" id="5"><img src="img/images/5.jpg"></div>
+						<div class="two-third-height overflow-h" id="5" @click="setModalView($event)"><img src="img/images/5.jpg"></div>
 						<div class="flex one-third-height mobile-flex">
-							<div class="row-img overflow-h" id="6"><img src="img/images/6.jpg"></div>
-							<div class="row-img overflow-h" id="7"><img src="img/images/7.jpg"></div>
+							<div class="row-img overflow-h" id="6" @click="setModalView($event)"><img src="img/images/6.jpg"></div>
+							<div class="row-img overflow-h" id="7" @click="setModalView($event)"><img src="img/images/7.jpg"></div>
 						</div>
 					</div>
 				</div>
 				<div class="second-column">
 					<div id="fourth-subcolumn">
 						<div class="two-third-height">
-							<div class="full-img overflow-h" id="8"><img src="img/images/8.jpg"></div>
+							<div class="full-img overflow-h" id="8" @click="setModalView($event)"><img src="img/images/8.jpg"></div>
 						</div>
-						<div class="one-third-height overflow-h" id="9"><img src="img/images/9.jpg"></div>
+						<div class="one-third-height overflow-h" id="9" @click="setModalView($event)"><img src="img/images/9.jpg"></div>
 					</div>
 					<div id="fifth-subcolumn">
-						<div class="full-img overflow-h" id="10"><img src="img/images/10.jpg"></div>
+						<div class="full-img overflow-h" id="10" @click="setModalView($event)"><img src="img/images/10.jpg"></div>
 					</div>
 					<div id="sixth-subcolumn">
-						<div class="full-img overflow-h" id="11"><img src="img/images/11.jpg"></div>
+						<div class="full-img overflow-h" id="11" @click="setModalView($event)"><img src="img/images/11.jpg"></div>
 					</div>
 				</div>
 			</div>
