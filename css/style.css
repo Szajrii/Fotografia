@@ -3,7 +3,13 @@ html, body, #app{
 	height: 100%;
 	margin: 0;
 }
-
+a:visited{
+	color: black;
+}
+a:active{
+	color: black;
+}
+/*header*/
 .header{
 	width: 100%;
 	height: 100%;
@@ -44,7 +50,7 @@ html, body, #app{
 	margin-block-end: 0.2em;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
+/*about*/
 .about{
 	width: 100%;
 	height: 65%;
@@ -393,9 +399,21 @@ html, body, #app{
 /*media*/
 
 @media screen and (max-width: 600px) {
+
+	
+	
+
+	/*header*/
 	.header{
 		height: 30%;
 	}
+	.header h1{
+		font-size: 4.5vw;
+	}
+	.header h2{
+		font-size: 3.5vw;
+	}
+
 
 	/*about*/
 	.about-mobile{
@@ -406,19 +424,29 @@ html, body, #app{
 		width: 100%;
 		height: 50%;
 	}
+	#first-about{
+		height: 45%
+	}
+	#second-about{
+		height: 55%
+	}
 	.about-description{
 		height: 50%;
 		width: 30%;
 
 		margin: auto;
-		padding: 12% 0 0 5%;
+		padding: 6% 0 0 2%;
+		margin-bottom: 3%;
 		text-align: justify;
 	}
 	.about-description h1{
 		font-size: 2.6vw;
 	}
 	.about-description p{
-		font-size: 1vw;
+		font-size: 1.2vw;
+	}
+	#wspolpraca{
+		font-size: 1.2vw;
 	}
 
 	/*gallery*/
@@ -521,10 +549,10 @@ html, body, #app{
 	}
 
 	.contact-form-header h1{
-		font-size: 2.7vw;
+		font-size: 3.4vw;
 	}
 	.contact-form-header p {
-		font-size: 1.4vw;
+		font-size: 1.9vw;
 	}
 
 	.form{
@@ -586,7 +614,7 @@ html, body, #app{
 	.footer a:active{
 		color: white;
 	}
-
+	/*nav*/
 	.nav{
 		width: 100%;
 		height: 30px;
@@ -628,19 +656,65 @@ html, body, #app{
 	}
 }
 
-@media screen and (max-width: 900px)  {
+/*@media screen and (max-width: 900px)  {
+
+
+	
+}*/
+
+@media screen and (max-width: 900px) and (min-width: 601px){
+	.quotation{
+		height: 150%;
+	}
+	/*nav*/
+	.nav{
+		height: 40px;
+
+	}
+	.nav a{
+		line-height: 40px;
+	}
+	/*header*/
+
+	.header h1{
+		font-size: 3.3vw;
+	}
+	.header h2{
+		font-size: 2.5vw;
+	}
+	/*about*/
 	.about{
 		height: 100%;
 	}
-	
+	.about h1 {
+		font-size: 2.6vw;
+	}
+	.about p {
+		font-size: 0.8vw;
+	}
+	/*contact*/
 	.contact{
 		height: 185%;
 	}
+	.form-button{
+		width: 103%;
+	}
+	.form-button button{
+		width: 100%;
+	}
 
+	.contact-form-header h1{
+		font-size: 2.8vw;
+	}
+
+	.contact-form-header p{
+		font-size: 1.3vw;
+	}
+	/*footer*/
 	.footer{
 		font-size: 2vw;
 	}
-
+	/*portfolio*/
 	.portfolio{
 		height: auto;
 	}
@@ -701,8 +775,8 @@ html, body, #app{
 	}
 }
 
-@media screen and (max-width: 900px) and (min-width: 601px){
-	.quotation{
-		height: 150%;
+@media screen and (max-width: 1400px) and (min-width: 901px){
+	.about{
+		height: 70%;
 	}
 }
