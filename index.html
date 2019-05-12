@@ -13,12 +13,10 @@
 	<div id="app"> 
 		<div class="modal" v-if="modalView == true">
 
-			<div class="modal-body">
+			<div class="modal-body" :class="{verticalImage: activeImage == 'img/images/8.jpg' || activeImage == 'img/images/10.jpg', }">
 				<i class="fas fa-times" id="xmark" @click="closeModal"></i>
-				<i class="fas fa-arrow-circle-left" id="arrow-left" @click="previousImage"></i>
-				<transition name='fade'>	
-					<img :src="activeImage" :key="activeId" >
-				</transition>
+				<i class="fas fa-arrow-circle-left" id="arrow-left" @click="previousImage"></i>				
+				<img :src="activeImage" :key="activeId" >				
 				<i class="fas fa-arrow-circle-right" id="arrow-right" @click="nextImage"></i>
 			</div>
 		</div>
