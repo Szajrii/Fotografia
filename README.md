@@ -12,6 +12,6 @@ Strona dostępna pod adresem:
 
 https://storage.googleapis.com/mszarek/Fotografia/index.html
 
-https://szajrii.github.io/Kawariania/
+https://szajrii.github.io/Fotografia/
 
 
